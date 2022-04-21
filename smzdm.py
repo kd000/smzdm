@@ -74,10 +74,6 @@ def logout(self):
     sys.stdout.flush()
 
 
-
-
-
-
 class SignBot(object):
 
     def __init__(self):
@@ -87,7 +83,7 @@ class SignBot(object):
 
     def __json_check(self, msg):
         """
-        对请求 盖乐世社区 返回的数据进行进行检查
+        对请求 返回的数据进行进行检查
         1.判断是否 json 形式
         """
         try:
