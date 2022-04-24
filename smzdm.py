@@ -1,7 +1,9 @@
 """
 什么值得买自动签到脚本
 
-借鉴（copy）自lws1122,fork 自:https://gitee.com/lsw1122/smzdm_bot
+借鉴 自:https://gitee.com/lsw1122/smzdm_bot
+       https://github.com/sunflo/smzdm_sign_bot
+      不会代码，自用修改推送
 """
 '''
 cron: 0 1 * * * smzdm.py
