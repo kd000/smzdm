@@ -42,33 +42,6 @@ SIGN_URL = 'https://zhiyou.smzdm.com/user/checkin/jsonp_checkin'
 # 环境变量中用于存放cookie的key值
 KEY_OF_COOKIE = "SMZDM_COOKIE"
 
-TG_TOKEN = ''
-TG_USER_ID = ''
-# serverJ
-SCKEY = ''
-# push+
-PUSH_PLUS_TOKEN = ''
-# 钉钉机器人
-DD_BOT_TOKEN = ''
-DD_BOT_SECRET = ''
-
-if "TG_BOT_TOKEN" in os.environ and len(os.environ["TG_BOT_TOKEN"]) > 1 and "TG_USER_ID" in os.environ and len(
-        os.environ["TG_USER_ID"]) > 1:
-    TG_TOKEN = os.environ["TG_BOT_TOKEN"]
-    TG_USER_ID = os.environ["TG_USER_ID"]
-
-if "PUSH_KEY" in os.environ and len(os.environ["PUSH_KEY"]) > 1:
-    SCKEY = os.environ["PUSH_KEY"]
-
-if "DD_BOT_TOKEN" in os.environ and len(os.environ["DD_BOT_TOKEN"]) > 1 and "DD_BOT_SECRET" in os.environ and len(
-        os.environ["DD_BOT_SECRET"]) > 1:
-    DD_BOT_TOKEN = os.environ["DD_BOT_TOKEN"]
-    DD_BOT_SECRET = os.environ["DD_BOT_SECRET"]
-
-if "PUSH_PLUS_TOKEN" in os.environ and len(os.environ["PUSH_PLUS_TOKEN"]) > 1:
-    PUSH_PLUS_TOKEN = os.environ["PUSH_PLUS_TOKEN"]
-
-
 def logout(self):
     print("[{0}]: {1}".format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"), self))
     sys.stdout.flush()
